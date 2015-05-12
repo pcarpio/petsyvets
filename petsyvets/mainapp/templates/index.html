@@ -11,15 +11,15 @@
     <meta name="description" content="Pets y Vets es una aplicaci&oacute;n desarrollada para almacenar informaci&oacute;n importante de sus mascotas as&iacute; como de proveer una plataforma geolocalizada de anuncios y eventos en su localidad.">
     <meta name="author" content="ImperatorApps">
 
-    <link rel="shortcut icon" href="{% static 'images/fav.png' %}" type="image/png">
+    <link rel="shortcut icon" href="{{ STATIC_URL }}images/fav.png" type="image/png">
 
-    <link href="{% static 'vendor/bootstrap/dist/css/bootstrap.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'vendor/font-awesome/css/font-awesome.css' %}" rel="stylesheet">    
-    <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
-    <link href="{% static 'styles/landing.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'styles/themes/cover-theme-photo.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'styles/devices.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'styles/responsive.css' %}" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}vendor/font-awesome/css/font-awesome.css" rel="stylesheet">    
+    <link href="{{ STATIC_URL }}vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}styles/landing.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}styles/themes/cover-theme-photo.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}styles/devices.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}styles/responsive.css" rel="stylesheet" media="screen">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
           rel='stylesheet' type='text/css'><!--Font Lato -->
@@ -55,7 +55,7 @@
                             <!-- Animated div - hidden default -->
                             <div class="move-item">
                                 <div class="v-center">
-                                    <img src="{% static 'images/demo/cover_01.png' %}" alt="reviewer" class="img-responsive animated flipInY">
+                                    <img src="{{ STATIC_URL }}images/demo/cover_01.png" alt="reviewer" class="img-responsive animated flipInY">
                                 </div>
                             </div>
                         </div>
@@ -98,25 +98,25 @@
                                     <div class="device-mobile android-nexus5-black">
                                         <div class="carousel-inner carousel-inner-device img-screen-wrapper">
                                             <div class="item active">
-                                                <img src="{% static 'images/screenshots/capture-1.png' %}" alt="...">
+                                                <img src="{{ STATIC_URL }}images/screenshots/capture-1.png" alt="...">
                                             </div>
                                             <div class="item">
-                                                <img src="{% static 'images/screenshots/capture-2.png' %}" alt="...">
+                                                <img src="{{ STATIC_URL }}images/screenshots/capture-2.png" alt="...">
                                             </div>
                                             <div class="item">
-                                                <img src="{% static 'images/screenshots/capture-3.png' %}" alt="...">
+                                                <img src="{{ STATIC_URL }}images/screenshots/capture-3.png" alt="...">
                                             </div>
                                         </div>
                                         <!-- Badges -->
                                         <ul class="badge-wrapper left-side">
                                         </ul>
                                         <ul class="badge-wrapper right-side">
-                                            <li class="wow bounceInDown" data-wow-delay="0.8s"><img src="{% static 'images/badges/49.png' %}" alt="..."></li>
-                                            <li class="wow bounceInDown" data-wow-delay="1.5s" data-wow-duration="1s"><img src="{% static 'images/badges/29.png' %}" alt="..."></li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.8s"><img src="{{ STATIC_URL }}images/badges/49.png" alt="..."></li>
+                                            <li class="wow bounceInDown" data-wow-delay="1.5s" data-wow-duration="1s"><img src="{{ STATIC_URL }}images/badges/29.png" alt="..."></li>
                                         </ul>
                                         <!-- QR-code -->
                                         <ul class="badge-wrapper right-bot-side">
-                                            <li class="qr-code-wrapper wow rubberBand" data-wow-delay="3s"><img src="{% static 'images/qr-code.png' %}" alt="..."></li>
+                                            <li class="qr-code-wrapper wow rubberBand" data-wow-delay="3s"><img src="{{ STATIC_URL }}images/qr-code.png" alt="..."></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -164,20 +164,20 @@
 
 
 
-<script src="{% static 'scripts/config.js' %}"></script>
-<script src="{% static 'vendor/jquery/dist/jquery.js' %}"></script>
-<script src="{% static 'vendor/retina.js/dist/retina.js' %}"></script>
-<script src="{% static 'vendor/bootstrap/dist/js/bootstrap.js' %}"></script>
-<script src="{% static 'vendor/smooth.scroll/index.js' %}"></script>
-<script src="{% static 'vendor/jquery.transit/jquery.transit.js' %}"></script>
-<script src="{% static 'vendor/WOW/dist/wow.js' %}"></script>
+<script src="{{ STATIC_URL }}scripts/config.js"></script>
+<script src="{{ STATIC_URL }}vendor/jquery/dist/jquery.js"></script>
+<script src="{{ STATIC_URL }}vendor/retina.js/dist/retina.js"></script>
+<script src="{{ STATIC_URL }}vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script src="{{ STATIC_URL }}vendor/smooth.scroll/index.js"></script>
+<script src="{{ STATIC_URL }}vendor/jquery.transit/jquery.transit.js"></script>
+<script src="{{ STATIC_URL }}vendor/WOW/dist/wow.js"></script>
 
 
 <script>
     require([
-        "{% static 'scripts/feature/scroll.js' %}",
-        "{% static 'scripts/feature/wow.js' %}",
-        "{% static 'scripts/feature/cover.js' %}"
+        "{{ STATIC_URL }}scripts/feature/scroll.js",
+        "{{ STATIC_URL }}scripts/feature/wow.js",
+        "{{ STATIC_URL }}scripts/feature/cover.js"
         ]);
 </script>
 </body>
