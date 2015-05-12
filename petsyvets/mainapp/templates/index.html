@@ -8,7 +8,7 @@
 
     <title>Pets y Vets - Al cuidado de su mascota</title>
 
-    <meta name="description" content="Pets y Vets es una aplicacin desarrollada para almacenar informaci&oacute;n importante de sus mascotas as&iacute; como de proveer una plataforma geolocalizada de anuncios y eventos en su localidad.">
+    <meta name="description" content="Pets y Vets es una aplicaci&oacute;n desarrollada para almacenar informaci&oacute;n importante de sus mascotas as&iacute; como de proveer una plataforma geolocalizada de anuncios y eventos en su localidad.">
     <meta name="author" content="ImperatorApps">
 
     <link rel="shortcut icon" href="{% static 'images/fav.png' %}" type="image/png">
@@ -98,13 +98,13 @@
                                     <div class="device-mobile android-nexus5-black">
                                         <div class="carousel-inner carousel-inner-device img-screen-wrapper">
                                             <div class="item active">
-                                                <img src="{% static 'images/screenshots/demo-18.jpg' %}" alt="...">
+                                                <img src="{% static 'images/screenshots/capture-1.png' %}" alt="...">
                                             </div>
                                             <div class="item">
-                                                <img src="{% static 'images/screenshots/demo-12.jpg' %}" alt="...">
+                                                <img src="{% static 'images/screenshots/capture-2.png' %}" alt="...">
                                             </div>
                                             <div class="item">
-                                                <img src="{% static 'images/screenshots/demo-19.jpg' %}" alt="...">
+                                                <img src="{% static 'images/screenshots/capture-3.png' %}" alt="...">
                                             </div>
                                         </div>
                                         <!-- Badges -->
@@ -147,7 +147,7 @@
 
                         <div class="group-inline btn-store-inverse">
                             <!-- <a href=""><div class="btn-store btn-store-ios-black"></div></a> -->
-                            <a href=""><div class="btn-store btn-store-android-black"></div></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.petsyvetsfree.Ch7.imperatorapps&hl=en"><div class="btn-store btn-store-android-black"></div></a>
                             <!-- <a href=""><div class="btn-store btn-store-wp-black"></div></a> -->
                         </div>
 
@@ -160,13 +160,24 @@
         </div><!-- /Container -->
     </div><!-- /Main -->
 
-<script src="{% static 'vendor/requirejs/require.js' %}"></script>
+
+
+
+
 <script src="{% static 'scripts/config.js' %}"></script>
+<script src="{% static 'vendor/jquery/dist/jquery.js' %}"></script>
+<script src="{% static 'vendor/retina.js/dist/retina.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/dist/js/bootstrap.js' %}"></script>
+<script src="{% static 'vendor/smooth.scroll/index.js' %}"></script>
+<script src="{% static 'vendor/jquery.transit/jquery.transit.js' %}"></script>
+<script src="{% static 'vendor/WOW/dist/wow.js' %}"></script>
+
+
 <script>
     require([
-        'feature/scroll',
-        'feature/wow',
-        'feature/cover'
+        "{% static 'scripts/feature/scroll.js' %}",
+        "{% static 'scripts/feature/wow.js' %}",
+        "{% static 'scripts/feature/cover.js' %}"
         ]);
 </script>
 </body>
