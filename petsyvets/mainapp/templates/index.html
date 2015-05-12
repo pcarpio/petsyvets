@@ -1,0 +1,173 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pets y Vets - Al cuidado de su mascota</title>
+
+    <meta name="description" content="Pets y Vets es una aplicacin desarrollada para almacenar informaci&oacute;n importante de sus mascotas as&iacute; como de proveer una plataforma geolocalizada de anuncios y eventos en su localidad.">
+    <meta name="author" content="ImperatorApps">
+
+    <link rel="shortcut icon" href="{% static 'images/fav.png' %}" type="image/png">
+
+    <link href="{% static 'vendor/bootstrap/dist/css/bootstrap.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.css' %}" rel="stylesheet">    
+    <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/landing.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'styles/themes/cover-theme-photo.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'styles/devices.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'styles/responsive.css' %}" rel="stylesheet" media="screen">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+          rel='stylesheet' type='text/css'><!--Font Lato -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700'
+          rel='stylesheet' type='text/css'><!--Font OpenSans -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700'
+          rel='stylesheet' type='text/css'><!-- Font Oswald -->
+</head>
+
+<body>
+
+    <!-- Main -->
+    <div class="cover bg-cover-photo">
+
+        <div class="container wow zoomIn">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <!-- Interactive device -->
+                    <div class="cover-interactive-wrapper">
+
+                        <!-- Left side - interactive -->
+                        <div class="cover-ia-left">
+                            <!-- Static div - visible default -->
+                            <div class="static-item">
+                                <div class="v-center">
+                                    <div class="cover-slogan animated fadeInRight">
+                                        <div class="str-01">Pets y Vets</div>
+                                        <div class="str-02">Al cuidado de su mascota</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Animated div - hidden default -->
+                            <div class="move-item">
+                                <div class="v-center">
+                                    <img src="{% static 'images/demo/cover_01.png' %}" alt="reviewer" class="img-responsive animated flipInY">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right side - interactive -->
+                        <div class="cover-ia-right">
+                            <!-- Static div - visible default -->
+                            <div class="static-item">
+                                <div class="v-center">
+                                    <div class="cover-rating review animated fadeInLeft">
+                                        <p class="review-rating">
+                                            <i class="fa fa-star full-star"></i>
+                                            <i class="fa fa-star full-star"></i>
+                                            <i class="fa fa-star full-star"></i>
+                                            <i class="fa fa-star full-star"></i>
+                                            <i class="fa fa-star">
+                                                <span class="half-star"><i class="fa fa-star"></i></span>
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Animated div - hidden default -->
+                            <div class="move-item">
+                                <div class="v-center">
+                                    <div class="review">
+                                        <div class="review-wrapper animated fadeInLeft">
+                                            <p class="text-color-dark">"Beautiful life..."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center div - interactive -->
+                        <div class="cover-ia-center">
+                            <!-- Center div - interactive -->
+                            <div class="move-item">
+                                <div id="carousel-device" class="carousel slide carousel-fade" data-ride="carousel">
+                                    <div class="device-mobile android-nexus5-black">
+                                        <div class="carousel-inner carousel-inner-device img-screen-wrapper">
+                                            <div class="item active">
+                                                <img src="{% static 'images/screenshots/demo-18.jpg' %}" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="{% static 'images/screenshots/demo-12.jpg' %}" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="{% static 'images/screenshots/demo-19.jpg' %}" alt="...">
+                                            </div>
+                                        </div>
+                                        <!-- Badges -->
+                                        <ul class="badge-wrapper left-side">
+                                        </ul>
+                                        <ul class="badge-wrapper right-side">
+                                            <li class="wow bounceInDown" data-wow-delay="0.8s"><img src="{% static 'images/badges/49.png' %}" alt="..."></li>
+                                            <li class="wow bounceInDown" data-wow-delay="1.5s" data-wow-duration="1s"><img src="{% static 'images/badges/29.png' %}" alt="..."></li>
+                                        </ul>
+                                        <!-- QR-code -->
+                                        <ul class="badge-wrapper right-bot-side">
+                                            <li class="qr-code-wrapper wow rubberBand" data-wow-delay="3s"><img src="{% static 'images/qr-code.png' %}" alt="..."></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /Interactive device -->
+
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Text content -->
+                <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
+                    <div class="text-center">
+
+                        <!-- <h2 class="main-title">Your Mobile Application</h2>
+
+                        <div class="clearfix"></div>
+
+                        <p class="main-description with-bg">AppKit is a landing page for your mobile application with a lot of benefits. The template supports three OS: iOS, Android and Windows Phone. There are various mobile devices, including tablets, provided for each OS - all of them have color options. Features area includes several interactive sections for a detailed description of your application. The template also includes a working subscription form and template pages for the company description, FAQ and terms of use.</p> -->
+
+                        <!-- <a href="landing_theme_light.html">
+                            <div class="btn btn-theme btn-enter">LEARN MORE / ENTER THE SITE</div>
+                        </a> -->
+
+                        <p class="available-device">Available for <i class="fa fa-tablet"></i> <i class="fa fa-mobile"></i></p>
+
+                        <div class="group-inline btn-store-inverse">
+                            <!-- <a href=""><div class="btn-store btn-store-ios-black"></div></a> -->
+                            <a href=""><div class="btn-store btn-store-android-black"></div></a>
+                            <!-- <a href=""><div class="btn-store btn-store-wp-black"></div></a> -->
+                        </div>
+
+                        <p class="copyrights-landing">© <a href="http://ImperatorApps.com/">ImperatorApps</a>, 2015. Todos los derechos reservados.</p>
+
+                    </div>
+                </div><!-- /Text content -->
+
+            </div><!-- /Row -->
+        </div><!-- /Container -->
+    </div><!-- /Main -->
+
+<script src="{% static 'vendor/requirejs/require.js' %}"></script>
+<script src="{% static 'scripts/config.js' %}"></script>
+<script>
+    require([
+        'feature/scroll',
+        'feature/wow',
+        'feature/cover'
+        ]);
+</script>
+</body>
+</html>
