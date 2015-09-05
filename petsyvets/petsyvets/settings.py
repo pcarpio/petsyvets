@@ -10,7 +10,7 @@ MAIN_APP = os.sep.join(os.path.abspath(__file__).split(os.sep)[:-2] + ['mainapp/
 
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Pablo Carpio', 'pacp.ec@gmail.com'),
 )
 
 ALLOWED_HOSTS = ['*']
@@ -19,7 +19,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': '',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
